@@ -13,14 +13,14 @@ html {
 }
 
 .header{
-    height: 30%;
+    height: 110px;
     width: 90%;
     margin: 0 auto;
 }
-.header .unitname{
+.unitname{
     width: 250px;
     margin: 10px auto;
-   margin-top: 30px;
+
     font-size: 30px;
     font-weight: bold;
 }
@@ -30,7 +30,7 @@ html {
 }
 .header .title{
     color: #226DDD;
-    width: 307px;
+    width: 186px;
     margin: 0 auto;
     line-height: 50px;
     font-size: 18px;
@@ -44,8 +44,16 @@ html {
     font-size: 18px;
     font-weight: bold;
 }
-.body{
+.titlecom{
+    color: #226DDD;
+    width: 110px;
+    margin: 0 auto;
     margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.body{
+    margin-top: 100px;
 }
 .choose{
     
@@ -101,12 +109,13 @@ html {
 }
 .tishi p{
     line-height: 30px;
+    text-align: center;
 }
 
 .footer{
     width: 205px;
     margin: 0 auto;
-    margin-top: 38px;
+    margin-top: 18px;
 }
 .footer-title{
     color: #fff;
