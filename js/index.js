@@ -172,8 +172,9 @@ $(function () {
         strlist.ten = $(".ten").find("input").val()
         // 验证电话格式是否正确
         var phone = $(".eleven").find("input").val()
-        var fixphone = $(".twlve").find("input").val()
-
+        var fixphone1 = $(".quhao").val()
+        var fixphone2 = $(".haoma").val()
+        debugger
         if (/^1[3456789]\d{9}$/.test(phone)) {
             strlist.eleven = phone
         } else {
@@ -181,9 +182,9 @@ $(function () {
             alert("手机号码有误，请重填");
             return false;
         }
-
-        if (/^(\(\d{3,4}\)|\d{3,4}-|\s)?\d{7,14}$/.test(fixphone)) {
-            strlist.twlve= fixphone
+        
+        if (/^(\(\d{3,4}\)|\d{3,4}-|\s)?\d{7,14}$/.test(fixphone1+fixphone2)) {
+            strlist.twlve= fixphone1+fixphone2
         } else {
 
             alert("固定电话有误，请重填");
@@ -210,7 +211,7 @@ $(function () {
         if (flag == 0) {
             // 发送给后端
 
-            alert("提交成功")
+            window.location.href = "./end.html";
         } else {
             alert("请选择所有必填项")
             n = 0
