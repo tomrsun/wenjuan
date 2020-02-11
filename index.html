@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/index.js"></script>
+    <title>问卷调查</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+
+            <div class="title">
+                新型冠状病毒疫情对文化产业企业影响
+            </div>
+            <div class="titlename">
+                问卷调查
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="optionbox">
+                <p class="op-title">
+                    1. 近期疫情对贵企业生产经营的影响
+                    <span>*必填</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="one-0">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="A.影响严重，导致企业经营面临严重困难，可能倒闭">
+                            </div>
+
+                            <label>A.影响严重，导致企业经营面临严重困难，可能倒闭</label>
+                        </li>
+                        <li class="one-0">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="B.影响很大，导致企业经营暂时停顿">
+                            </div>
+                            <label>B.影响很大，导致企业经营暂时停顿</label>
+                        </li>
+                        <li class="one-0">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="C.影响较大，导致企业经营出现部分困难，经营勉强维持">
+                            </div>
+                            <label>C.影响较大，导致企业经营出现部分困难，经营勉强维持</label>
+                        </li>
+                        <li class="one-0">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="D.影响较小，企业经营出现一些困难，但经营总体保持稳定">
+                            </div>
+                            <label>D.影响较小，企业经营出现一些困难，但经营总体保持稳定</label>
+                        </li>
+                        <li class="one-0">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="E.没有明显影响">
+                            </div>
+                            <label>E.没有明显影响</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="optionbox">
+                <p class="op-title">
+                    2. 根据当地政府规定，贵企业计划何时复工
+                    <span>*必填</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="two-1">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="A.2月10日（正月十六）前">
+                            </div>
+
+                            <label>A.2月10日（正月十六）前</label>
+                        </li>
+                        <li class="two-1">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="B.2月14日（正月廿一）前">
+                            </div>
+                            <label>B.2月14日（正月廿一）前</label>
+                        </li>
+                        <li class="two-1">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="C.2月29日前">
+                            </div>
+                            <label>C.2月29日前</label>
+                        </li>
+                        <li class="two-1">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="D.3月1日后">
+                            </div>
+                            <label>D.3月1日后</label>
+                        </li>
+                        <li class="two-1">
+                            <div class="radio-box">
+                                <input type="radio" name="one" class="xuanzhe" value="E.春节未停工停产">
+                            </div>
+                            <label>E.春节未停工停产</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        
+            <div class="optionbox">
+                <p class="op-title">
+                    3. 疫情导致贵企业目前面临的主要困难（多选）
+                    <span>*必填 &nbsp;填空字符长度0-100</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="three-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="A.市场订单减少">
+                            </div>
+
+                            <label>A.市场订单减少</label>
+                        </li>
+                        <li class="three-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="B.缺乏防疫物资（如：口罩、酒精等）">
+                            </div>
+                            <label>B.缺乏防疫物资（如：口罩、酒精等）</label>
+
+                        </li>
+                        <li class="three-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="C.生产工人及管理人员无法正常返岗">
+                            </div>
+                            <label>C.生产工人及管理人员无法正常返岗</label>
+                        </li>
+                        
+                       
+                        <li class="three-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="D.无法正常生产但房租等成本仍需负担">
+                            </div>
+                            <label>D.无法正常生产但房租等成本仍需负担</label>
+                        </li>
+                        <li class="three-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="E.无法正常生产但用工成本支出增高">
+                            </div>
+                            <label>E.无法正常生产但用工成本支出增高</label>
+                        </li>
+                        
+                        <li class="three-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="F.财务费用高">
+                            </div>
+                            <label>F.财务费用高</label>
+                        </li>
+                        
+                        <li class="three-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="G.融资难度加大">
+                            </div>
+                            <label>G.融资难度加大</label>
+                        </li>
+                       
+                        <li class="three-anther">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="H.其它">
+                            </div>
+                            <label>H.其它</label>
+                           
+                        </li>
+                        <div id="three" class="disapper">
+                            <input type="text" maxlength="100" class="other">
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="optionbox">
+                <p class="op-title">
+                    4. 疫情对贵企业经营资金方面的影响（可多选）
+                    <span>*必填  填空字符长度0-100</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="four-3">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="A.企业营业收入减少，流动资金紧张">
+                            </div>
+
+                            <label>A.企业营业收入减少，流动资金紧张</label>
+                        </li>
+                        <li class="four-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="B.企业无法及时偿还贷款等债务，资金压力加大">
+                            </div>
+                            <label>B.企业无法及时偿还贷款等债务，资金压力加大</label>
+                        </li>
+                        <li class="four-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="C.金融机构提供融资的审核条件提高，手续增多或时间延长">
+                            </div>
+                            <label>C.金融机构提供融资的审核条件提高，手续增多或时间延长</label>
+                        </li>
+                        <li class="four-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="D.企业面临被抽贷、断贷风险">
+                            </div>
+                            <label>D.企业面临被抽贷、断贷风险</label>
+                        </li>
+                        <li class="four-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="E.企业短期融资能力下降">
+                            </div>
+                            <label>E.企业短期融资能力下降</label>
+                        </li>
+                        <li class="four-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="F.企业融资需求减少">
+                            </div>
+                            <label>F.企业融资需求减少</label>
+                        </li>
+                        <li class="four-anther">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="G.其它">
+                            </div>
+                            <label>G.其它</label>
+                        </li>
+                        <div id="four" class="disapper">
+                            <input type="text" maxlength="100" class="other">
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="optionbox">
+                <p class="op-title">
+                    5. 预计贵企业账上资金能支撑多久（单选）
+                    <span>*必填</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        
+                        <li class="five-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="A.1-3个月">
+                            </div>
+                            <label>A.1-3个月</label>
+                        </li>
+                        <li class="five-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="B.3-6个月">
+                            </div>
+                            <label>B.3-6个月</label>
+                        </li>
+                        <li class="five-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="C.6-12个月">
+                            </div>
+                            <label>C.6-12个月</label>
+                        </li>
+                        <li class="five-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="D.1年以上">
+                            </div>
+                            <label>D.1年以上</label>
+                        </li>
+                       
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="optionbox">
+                <p class="op-title">
+                    6. 预计疫情对贵企业上半年营业收入的影响
+                    <span>*必填</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="six-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="A.预计比上年同期减少10％以内">
+                            </div>
+
+                            <label>A.预计比上年同期减少10％以内</label>
+                        </li>
+                        <li class="six-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="B.预计比上年同期减少10-20%">
+                            </div>
+                            <label>B.预计比上年同期减少10-20%</label>
+                        </li>
+                        <li class="six-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="C.预计比上年同期减少20-30%">
+                            </div>
+                            <label>C.预计比上年同期减少20-30%</label>
+                        </li>
+                        <li class="six-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="D.预计比上年同期减少30-40%">
+                            </div>
+                            <label>D.预计比上年同期减少30-40%</label>
+                        </li>
+                        
+                        <li class="six-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="E.预计与上年同期持平">
+                            </div>
+                            <label>E.预计与上年同期持平</label>
+                        </li>
+                        <li class="six-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="F.预计比上年同期增加">
+                            </div>
+                            <label>F.预计比上年同期增加</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="optionbox">
+                <p class="op-title">
+                    7. 预计疫情对贵企业上半年利润的影响  
+                    <span>*必填</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="seven-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="A.预计比上年同期减少10％以内">
+                            </div>
+
+                            <label>A.预计比上年同期减少10％以内</label>
+                        </li>
+                        <li class="seven-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="B.预计比上年同期减少10-20%">
+                            </div>
+                            <label>B.预计比上年同期减少10-20%</label>
+                        </li>
+                        <li class="seven-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="C.预计比上年同期减少20-30%">
+                            </div>
+                            <label>C.预计比上年同期减少20-30%</label>
+                        </li>
+                        <li class="seven-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="D.预计比上年同期减少30-40%">
+                            </div>
+                            <label>D.预计比上年同期减少30-40%</label>
+                        </li>
+                        
+                        <li class="seven-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="E.预计亏损">
+                            </div>
+                            <label>E.预计亏损</label>
+                        </li>
+                        
+                        <li class="seven-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="F.预计与上年同期持平">
+                            </div>
+                            <label>F.预计与上年同期持平</label>
+                        </li>
+                        <li class="seven-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="G.预计比上年同期增加">
+                            </div>
+                            <label>G.预计比上年同期增加</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="optionbox">
+                <p class="op-title">
+                    8. 预计疫情对贵企业上半年用工的影响   
+                    <span>*必填</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="eight-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="A.预计比上年同期减少10％以内">
+                            </div>
+
+                            <label>A.预计比上年同期减少10％以内</label>
+                        </li>
+                        <li class="eight-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="B.预计比上年同期减少10-20%">
+                            </div>
+                            <label>B.预计比上年同期减少10-20%</label>
+                        </li>
+                        <li class="eight-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="C.预计比上年同期减少20-30%">
+                            </div>
+                            <label>C.预计比上年同期减少20-30%</label>
+                        </li>
+                        <li class="eight-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="D.预计比上年同期减少30-40%">
+                            </div>
+                            <label>D.预计比上年同期减少30-40%</label>
+                        </li>
+                        
+                        <li class="eight-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="E.预计与上年同期持平">
+                            </div>
+                            <label>E.预计与上年同期持平</label>
+                        </li>
+                        <li class="eight-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="F.预计比上年同期增加">
+                            </div>
+                            <label>F.预计比上年同期增加</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="optionbox">
+                <p class="op-title">
+                    9. 针对疫情影响，贵企业希望政府出台哪方面措施帮助企业渡过难关（最多选5项）   
+                    <span>*必填  填空字符长度0-100</span>
+                </p>
+
+                <div class="choose-box">
+                    <ul>
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="A.阶段性免征企业增值税及附加">
+                            </div>
+
+                            <label>A.阶段性免征企业增值税及附加</label>
+                        </li>
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="B.降低企业增值税、所得税等税率">
+                            </div>
+                            <label>B.降低企业增值税、所得税等税率</label>
+                        </li>
+                       
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="C.帮助企业招工">
+                            </div>
+                            <label>C.帮助企业招工</label>
+                        </li>
+
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="D.对受疫情影响无法如期履行国际贸易合同给予帮助">
+                            </div>
+                            <label>D.对受疫情影响无法如期履行国际贸易合同给予帮助</label>
+                        </li>
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="E.对受疫情影响无法如期履行国内交易合同给与帮助">
+                            </div>
+                            <label>E.对受疫情影响无法如期履行国内交易合同给与帮助</label>
+                        </li>
+                       
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="F.加强对企业疫情防控指导，明确疫情防控标准和实施细则">
+                            </div>
+                            <label>F.加强对企业疫情防控指导，明确疫情防控标准和实施细则</label>
+                        </li>
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="G.帮助企业协调原辅材料和产品发货等运输问题">
+                            </div>
+                            <label>G.帮助企业协调原辅材料和产品发货等运输问题</label>
+                        </li>
+                        <li class="nine-2">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="H.允许企业在保障安全前提下自行决定复工时间">
+                            </div>
+                            <label>H.允许企业在保障安全前提下自行决定复工时间</label>
+                        </li>
+                        <li class="nine-anther">
+                            <div class="radio-box">
+                                <input type="checkbox" name="one" class="xuanzhe" value="I.其它">
+                            </div>
+                            <label>I.其它</label>
+
+                            
+                        </li>
+                        <div id="nine" class="disapper">
+                            <input type="text" maxlength="100" class="other">
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="optionbox">
+                <p class="op-title">
+                    10. 填写人  
+                    <span>*必填  填空字符长度0-50</span>
+                </p>
+
+                <div class="ten">
+                    <input type="text" maxlength="50" class="other">
+                </div>
+
+            </div>
+            <div class="optionbox">
+                <p class="op-title">
+                    11. 手机号码   
+                    <span>*必填  填空字符长度0-50</span>
+                </p>
+
+                <div class="eleven">
+                    <input type="text" maxlength="50" class="other">
+                </div>
+
+            </div>
+            <div class="optionbox">
+                <p class="op-title">
+                    12. 固定电话   
+                    <span>*必填  填空字符长度0-50</span>
+                </p>
+
+                <div class="twlve">
+                    <input type="text" maxlength="50" class="quhao" placeholder="区号">-
+                    <input type="text" maxlength="50" class="haoma" placeholder="号码">
+                </div>
+
+            </div>
+            <button class="tijiao">提交问卷</button>
+            
+        </div>
+    </div>
+</body>
+
+</html>

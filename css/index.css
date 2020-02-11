@@ -1,0 +1,144 @@
+:root {
+    --linecolor: #929292;
+}
+html{
+    /* background-image: linear-gradient(#fff, #31b0f8, #fff); */
+    background: url("../img/beijing.jpg")no-repeat;
+    background-size: cover;
+    background-repeat:no-repeat;
+     background-attachment:fixed;
+}
+
+.main{
+    background-color: rgba(255,255,255,0.4);
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    
+}
+.body{
+    margin-top: 20px;
+}
+.header{
+    height: 30%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header .title{
+    color: #1ea0fa;
+    width: 307px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header .titlename{
+    color:#1ea0fa;
+    width: 80px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.op-title{
+
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 10px;
+}
+.op-title span{
+    display: inline-block;
+    color: #5F5F6D;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.choose-box{
+    padding: 10px;
+}
+.choose-box ul{
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--linecolor);
+    border-top: none;
+    border-radius: 4px;
+}
+.choose-box li{
+    list-style: none;
+    border-top: 1px solid var(--linecolor);
+    padding:10px;
+    position: relative;
+}
+.choose-box li input{
+    background-color: #fff;
+    visibility: hidden;
+}
+.choose-box li label{
+    margin-left: 20px;
+}
+.radio-box{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--linecolor);
+    border-radius: 9px;
+    position: absolute;
+    top: 10px;
+    left: 6px;
+}
+
+.selected{
+    width: 22px;
+    height: 22px;
+    background: url(../img/xuanzhong.png) no-repeat;
+    background-size: 22px;
+    border: none;
+   
+}
+.tijiao{
+    display: block;
+    width: 90%;
+    line-height: 40px;
+    font-size: 20px;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    background-color: tomato;
+    color: #fff;
+    border-radius: 4px;
+}
+.warning{
+    color: red!important;
+}
+.other{
+   margin: 10px;
+    width:90%;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    visibility: visible!important;
+    border-radius: 4px;
+}
+.disapper{
+    display: none;
+}
+.quhao{
+    margin: 10px;
+    width:20%;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    visibility: visible!important;
+    border-radius: 4px;
+}
+.haoma{
+    margin: 10px;
+    width:60%;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    visibility: visible!important;
+    border-radius: 4px;
+}
+

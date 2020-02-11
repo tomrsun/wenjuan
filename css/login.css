@@ -1,0 +1,116 @@
+html { 
+    overflow-x: hidden; overflow-y: hidden; 
+    background: url("../img/beijing.jpg")no-repeat;
+    background-size: cover;
+}
+.main{
+    /* background-color: #fff; */
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.6;
+    
+}
+
+.header{
+    height: 30%;
+    width: 90%;
+    margin: 0 auto;
+}
+.header .unitname{
+    width: 250px;
+    margin: 10px auto;
+   margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.img-logo{
+    width: 50px;
+    vertical-align: middle;
+}
+.header .title{
+    color: #226DDD;
+    width: 307px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header .titlename{
+    color: #226DDD;
+    width: 80px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.body{
+    margin-top: 30px;
+}
+.choose{
+    
+    width: 100%;
+    /* margin-top: 50px; */
+}
+.name{
+    display: block;
+    border: 1px solid #ccc;
+    width: 200px;
+    line-height: 30px;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-indent: 10px;
+}
+.btn{
+    display: block;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: #226DDD;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.disappear{
+    display: none;
+}
+
+.choosebox{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 200px;
+    height: 230px;
+    margin: 0 auto;
+    
+    overflow-y: scroll;
+}
+.choosebox li{
+    list-style: none;
+    text-indent: 10px;
+    line-height: 25px;
+}
+.tishi{
+   width: 310px;;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 13px;
+}
+.tishi p{
+    line-height: 30px;
+}
+
+.footer{
+    width: 205px;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+.footer-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
