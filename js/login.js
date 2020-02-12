@@ -54,7 +54,7 @@ $(function () {
             alert('单位名称输入不正确')
         } else if (nowval != '' && nowval != null) {
             // 如果单位不为空就向后端发送请求，查询是否存在该单位
-
+            $(".name").val("")
             window.location.href = "./index.html?unitname=" + nowval;
 
         } else {

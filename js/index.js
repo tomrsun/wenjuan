@@ -18,10 +18,13 @@ $(function () {
         ten: '',
         eleven: '',
         twlve: '',
+        threeother:"",
+        fourother:'',
+        nineother:'',
         unitname: searchText,
     }
 
-
+    
     $(".choose-box li").click(function (e) {
 
         let name = $(this).eq(0).attr('class').split('-')[0]
@@ -33,7 +36,9 @@ $(function () {
 
             var n = 0
             var str = $(this).find(".radio-box input").val()
-
+            if(str.indexOf("其它") != -1){
+                str = 'Z.' + str.split('.')[1]
+            }
             if (strlist[name].length == 0) {
                 if (str.indexOf("其它") != -1) {
 
@@ -71,11 +76,12 @@ $(function () {
 
         } else if (name == "nine") {
 
-
-
             var n = 0
             var str = $(this).find(".radio-box input").val()
 
+            if(str.indexOf("其它") != -1){
+                str = 'Z.' + str.split('.')[1]
+            }
             if (strlist[name].length == 0) {
                 if (str.indexOf("其它") != -1) {
 
@@ -154,7 +160,7 @@ $(function () {
                 if (str == "") {
                     alert("请填写其他原因")
                 } else {
-                    strlist[name][i] = 'Z.' + str
+                    strlist[name + 'other'] = str
                 }
 
             }
@@ -180,7 +186,7 @@ $(function () {
         } else {
 
             alert("手机号码有误，请重填");
-            return false;
+            
         }
         
         if (/^(\(\d{3,4}\)|\d{3,4}-|\s)?\d{7,14}$/.test(fixphone1+fixphone2)) {
@@ -188,22 +194,27 @@ $(function () {
         } else {
 
             alert("固定电话有误，请重填");
-            return false;
+            
         }
 
 
         var flag = 0
         var n = 0
-        for (key in strlist) {
+  
+        for (let key in strlist) {
+            if(n == 12){
+                break
+            }else{
+                if (strlist[key] == '' || strlist[key] == null) {
 
-            if (strlist[key] == '' || strlist[key] == null) {
-
-                $(".optionbox").eq(n).find("span").addClass("warning")
-                flag++
-            } else {
-                $(".optionbox").eq(n).find("span").removeClass("warning")
+                    $(".optionbox").eq(n).find("span").addClass("warning")
+                    flag++
+                } else {
+                    $(".optionbox").eq(n).find("span").removeClass("warning")
+                }
+                n++
             }
-            n++
+            
 
         }
 
@@ -211,7 +222,7 @@ $(function () {
         if (flag == 0) {
             // 发送给后端
             window.location.replace("./end.html")
-          
+            
         } else {
             alert("请选择所有必填项")
             n = 0
