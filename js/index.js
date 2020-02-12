@@ -174,7 +174,7 @@ $(function () {
         var phone = $(".eleven").find("input").val()
         var fixphone1 = $(".quhao").val()
         var fixphone2 = $(".haoma").val()
-        debugger
+        
         if (/^1[3456789]\d{9}$/.test(phone)) {
             strlist.eleven = phone
         } else {
@@ -210,8 +210,8 @@ $(function () {
 
         if (flag == 0) {
             // 发送给后端
-
-            window.location.href = "./end.html";
+            window.location.replace("./end.html")
+          
         } else {
             alert("请选择所有必填项")
             n = 0

@@ -1,44 +1,51 @@
 $(function () {
 
-    // let count = 0
-    // $(".name").bind("input propertychange", function (event) {
+    let count = 0
+    $(".name").bind("input propertychange", function (event) {
 
 
-    //     var val = $(".name").val()
+        var val = $(".name").val()
 
-    //     var arrlist = ['sdsdsdsd', 'sdsdsd', 'sdsds', 'sdsdsd']
-
-
-    //     if (val.length >= 4) {
-    //         count++
-    //         if (count == 1) {
-
-    //             $('.choosebox').html('')
-
-    //             for (let i = 0; i < arrlist.length; i++) {
-    //                 let str = '<li>' + arrlist[i] + '</li>'
-    //                 $(str).appendTo('.choosebox').on('click', function () {
-    //                     let bewstr = $(this).eq(0).text()
-                     
-    //                     $(".name").val(bewstr)
-    //                     count = 0
-    //                     $('.choosebox').addClass('disappear');
-    //                 });
-    //             }
+        var arrlist = ['aaa11111']
 
 
-    //             $('.choosebox').removeClass('disappear');
+        if (val.length >= 4) {
+            if(val == '有限责任公司' || val == '无限责任公司' || val == '股份公司'){
+                
+                $('.choosebox').addClass('disappear');
+            }else{
+                count++
+                // 这里发送请求到后端请求到数据复赋值给arrlist
+                if (count == 1) {
+    
+                    $('.choosebox').html('')
+    
+                    for (let i = 0; i < arrlist.length; i++) {
+                        let str = '<li>' + arrlist[i] + '</li>'
+                        $(str).appendTo('.choosebox').on('click', function () {
+                            let bewstr = $(this).eq(0).text()
+                         
+                            $(".name").val(bewstr)
+                            count = 0
+                            $('.choosebox').addClass('disappear');
+                        });
+                    }
+    
+    
+                    $('.choosebox').removeClass('disappear');
+    
+                } else {
+                    count = 2
+                }
+            }
+           
 
-    //         } else {
-    //             count = 2
-    //         }
+        } else {
+            count = 0
+            $('.choosebox').addClass('disappear');
+        }
 
-    //     } else {
-    //         count = 0
-    //         $('.choosebox').addClass('disappear');
-    //     }
-
-    // });
+    });
 
     $('.btn').on('click', function () {
         let nowval = $(".name").val()
